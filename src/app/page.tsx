@@ -111,7 +111,7 @@ export default function PatientDirectory() {
               <input
                 type="text"
                 placeholder="Search..."
-                className="border border-gray-700 text-gray-200 rounded-lg px-4 py-2 pl-10 w-64"
+                className="border border-gray-700 text-gray-500 rounded-lg px-4 py-2 pl-10 w-64"
                 value={search}
                 onChange={(e) => { setSearch(e.target.value); setPage(1); }}
               />
@@ -135,7 +135,7 @@ export default function PatientDirectory() {
           <div className="flex items-center gap-4">
             <span className="text-sm text-gray-600">Sort by:</span>
             <select
-              className="border rounded-lg px-3 py-2 text-sm"
+              className="border rounded-lg px-3 py-2 text-sm text-gray-500"
               value={sort}
               onChange={(e) => setSort(e.target.value)}
             >
