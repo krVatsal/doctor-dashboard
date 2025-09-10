@@ -53,8 +53,8 @@ export async function GET(req: NextRequest) {
   // Sort
   if (sort) {
     patients = patients.sort((a, b) => {
-      let aValue: any;
-      let bValue: any;
+      let aValue: string | number;
+      let bValue: string | number;
       
       switch (sort) {
         case 'patient_name':
