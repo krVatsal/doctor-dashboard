@@ -111,7 +111,7 @@ export default function PatientDirectory() {
               <input
                 type="text"
                 placeholder="Search..."
-                className="border rounded-lg px-4 py-2 pl-10 w-64"
+                className="border border-gray-700 text-gray-200 rounded-lg px-4 py-2 pl-10 w-64"
                 value={search}
                 onChange={(e) => { setSearch(e.target.value); setPage(1); }}
               />
@@ -121,7 +121,7 @@ export default function PatientDirectory() {
             </div>
             
             <select
-              className="border rounded-lg px-4 py-2 bg-white"
+              className="border rounded-lg px-4 py-2 bg-white text-gray-700"
               value={medicalIssue}
               onChange={(e) => { setMedicalIssue(e.target.value); setPage(1); }}
             >
